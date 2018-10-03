@@ -1,9 +1,14 @@
 .w-100{
     max-height: 450px;
 }
-.carousel-caption.d-none.d-md-block {
-    background-color: #ff000080;
+
+h5.text-slide {
+    background-color: #ff00006e;
+    color: white;
+    text-shadow: 1px 1px black;
+    padding: 9px;
 }
+
 /* 
 .card{
     margin-top: 10px;
