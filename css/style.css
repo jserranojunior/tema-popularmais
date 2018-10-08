@@ -49,6 +49,17 @@ img.img-sidebar-google-play {
     max-width: 70%! important;
 }
 
+.page-link{
+    color: #365899;
+}
+
+.navbar-dark .navbar-text {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
 @media (min-width: 1200px){
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 2.5rem;
