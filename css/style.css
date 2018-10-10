@@ -8,11 +8,11 @@ h5.text-slide {
     text-shadow: 1px 1px black;
     padding: 9px;
 }
-
-/* 
 .card{
     margin-top: 10px;
 }
+/* 
+
 .card-body{
     padding: 7px 9px;
     height: 100px;
@@ -56,8 +56,6 @@ img.img-sidebar-google-play {
 .navbar-dark .navbar-text {
     color: rgb(255, 255, 255);
 }
-
-
 
 
 @media (min-width: 1200px){
