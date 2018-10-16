@@ -52,46 +52,61 @@
                     </div>
                 </div>
 
-                <div class="row">    
-                 
-                        <?php
-                        global $post;
-                        $args = array( 'post_type' => 'attachment', 'posts_per_page' => 12, 'post_status' => 'any', 'post_parent' => null ); 
-                        $attachments = get_posts( $args );
-                        if ( $attachments ) {
-                            foreach ( $attachments as $post ) {?>
-                    <a class="text-danger" href="#">
+                          
+
+
+
+
+
+                <div class="row">   
+<? 
+  $args = array(
+    'cat' => '5',
+    'post_type' => 'post',
+    'posts_per_page' => 16,
+    'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
+    );
+
+query_posts($args);
+?>
+
+
+<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                    
                         <div class="col-md-5 col-lg-3 col-sm-12" >
+                        <a class="text-danger" href="<? the_permalink(); ?>">
                             <div class="card float-center" >
                             <div class="float-center text-center ">
-                                <?php the_attachment_link( $post->ID, false ); ?>
+                                <?php the_post_thumbnail('post-thumbnail', array('size'=> '300px','class' => 'img-thumb-inicial img-fluid')); ?>
                             </div>                            
                                 <div class="card-body">
                                     <p class="card-text text-danger titulo-posts-inicial">                                   
-                                    <? the_title(); ?>                                    
+                                    <? the_title(); ?>                                   
                                     </p>
                                 </div>
                                 
                             </div>
+                            </a>
                         </div>
-                    </a>		
-		            <? setup_postdata( $post ); ?>		
-		            <? the_excerpt(); ?>                               
-                        <?}
-                        wp_reset_postdata();
-                    }
-                    ?>
+                    		
+                    <?php endwhile; ?>
+                        <?php else : get_404_template();  endif; ?>
                 </div>
 
+                            
+                            
+                            
+
                 <div class="row">
-                    <div class="col text-right">
+                    <div class="col text-right">                   
                         <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-center">
-                                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+
+                                <?php previous_posts_link( '<li class="page-item"> <span class="page-link"> Mais novos </span> </li>' ); ?> 
+                                
+
+                                <?php next_posts_link( '<li class="page-item"> <span class="page-link"> Mais antigos </span> </li>' ); ?> 
+                                
                             </ul>
                         </nav>
                     </div>
