@@ -1,7 +1,7 @@
 <? include('header.php'); ?>
 
 <? 
-  $args = array(
+  $slide = array(
     'cat' => '5',
     'post_type' => 'post',
     'posts_per_page' => 5,
@@ -9,7 +9,7 @@
     );
 
    
-query_posts($args);
+query_posts($slide);
 $count = 0;
 ?>
 
