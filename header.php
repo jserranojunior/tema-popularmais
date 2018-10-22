@@ -55,10 +55,10 @@
                                     <a class="nav-link" href="http://popularmais.com.br/colunistas/">COLUNISTAS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="http://popularmais.com.br/#">SERVIÇOS</a>
+                                    <a target="_blank"  class="nav-link" href="https://www.waze.com/pt-BR/livemap">TRÂNSITO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="http://popularmais.com.br/expediente/">EXPEDIENTES</a>
+                                    <a target="_blank" class="nav-link" href="https://www.climatempo.com.br/">CLIMA</a>
                                 </li>
                             </ul>
                         </div>
