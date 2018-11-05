@@ -40,19 +40,19 @@
                         <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="/">INÍCIO<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="<?php echo get_site_url(); ?>">INÍCIO<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="http://popularmais.com.br/category/geral/">NOTÍCIAS</a>
+                                    <a class="nav-link" href="<?php echo get_site_url(); ?>/category/geral/">NOTÍCIAS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="http://popularmais.com.br/category/politica/">POLITICA</a>
+                                    <a class="nav-link" href="<?php echo get_site_url(); ?>/category/politica/">POLITICA</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="http://popularmais.com.br/category/cidade/">CIDADE</a>
+                                    <a class="nav-link" href="<?php echo get_site_url(); ?>/category/cidade/">CIDADE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="http://popularmais.com.br/colunistas/">COLUNISTAS</a>
+                                    <a class="nav-link" href="<?php echo get_site_url(); ?>/colunistas/">COLUNISTAS</a>
                                 </li>
                                 <li class="nav-item">
                                     <a target="_blank"  class="nav-link" href="https://www.waze.com/pt-BR/livemap">TRÂNSITO</a>

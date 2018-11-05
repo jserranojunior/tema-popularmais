@@ -93,9 +93,6 @@ $count = 0;
         </div>
 
 
-
-
-
         <div class="row">
             <div class="col text-right">
                 <nav aria-label="Page navigation example">
