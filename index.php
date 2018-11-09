@@ -22,7 +22,10 @@ $count = 0;
 
 
         <?php
-        if ( $_SERVER["REQUEST_URI"] == "/popularmaiswp/" or $_SERVER["REQUEST_URI"] == "/") { ?>
+        if ( $_SERVER["REQUEST_URI"] == "/popularmaiswp/" 
+        or $_SERVER["REQUEST_URI"] == "/"
+        or $_SERVER["REQUEST_URI"] == "/popmais/"
+        ) { ?>
         <div class="row">
             <div class="col">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
