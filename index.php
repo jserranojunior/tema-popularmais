@@ -13,20 +13,28 @@ query_posts($slide);
 $count = 0;
 ?>
 
+
+
+
 <div class="row">
     <div class="main col-md-9">
+
+
+
+        <?php
+        if ( $_SERVER["REQUEST_URI"] == "/popularmaiswp/" or $_SERVER["REQUEST_URI"] == "/") { ?>
         <div class="row">
             <div class="col">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-
+        
                         <?php if(have_posts()) : while(have_posts()) : the_post(); 
-                        $count += 1;
-                        ?>
+                                $count += 1;
+                                ?>
                         <div class="carousel-item <? if($count == 1){ echo('active'); } ?> ">
                             <?php the_post_thumbnail('post-thumbnail', array('size'=> '300px','class' => 'd-block w-100')); ?>
-
-
+        
+        
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="text-slide">
                                     <? the_title(); ?>
@@ -35,8 +43,8 @@ $count = 0;
                         </div>
                         <?php endwhile; ?>
                         <?php else : get_404_template();  endif; ?>
-
-
+        
+        
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -49,9 +57,8 @@ $count = 0;
                 </div>
             </div>
         </div>
-
-
-
+        
+        <? } /* fim slide */ ?>
 
 
 
@@ -109,9 +116,9 @@ $count = 0;
         </div>
 
         <!-- fim main -->
-     </div>
+    </div>
     <? include('sidebar.php') ?>
-    
+
 </div>
 
 <? include('footer.php'); ?>

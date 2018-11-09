@@ -1,20 +1,27 @@
 <div class="sidebar col-md-3">
     <div class="row">
         <div class="col">
-
-
-            <div class="btn btn-sm btn-outline text-warning logo-menu"><i class="fas fa-headphones"></i></div>
-            <div class="btn btn-sm btn-outline text-primary logo-menu"><i class="fab fa-facebook-square"></i></div>
-            <div class="btn btn-sm btn-outline text-danger logo-menu"><i class="fab fa-instagram"></i></div>
-            <div class="btn btn-sm btn-outline text-primary logo-menu"><i class="fab fa-twitter"></i></div>
-            <div class="btn btn-sm btn-outline text-success logo-menu"><i class="fab fa-whatsapp"></i></div>
-
-
+            <div class="btn btn-sm btn-outline text-warning logo-menu">
+                <i class="fas fa-headphones"></i>
+            </div>
+            <a href="https://www.facebook.com/popularmaisbr/">
+                <div class="btn btn-sm btn-outline text-primary logo-menu">
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+            </a>
+            <div class="btn btn-sm btn-outline text-danger logo-menu">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="btn btn-sm btn-outline text-primary logo-menu">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <a class="link-whatsapp" href="whatsapp://send?phone=55511972182492">
+            <div class="btn btn-sm btn-outline text-success logo-menu">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </a>
         </div>
     </div>
-
-
-
     <div class="row">
         <div class="col">
             <form>
@@ -30,15 +37,14 @@
             </div>
         </div>
     </div>
-
     <div class="row">
-            <div class="col text-center">
-                <a href="#">
-                    <img class="img-fluid img-sidebar-google-play" src="<?php bloginfo('template_directory'); ?>/img/disponivel-google-play.png"
-                        alt="">
-                </a>
-            </div>
+        <div class="col text-center">
+            <a href="#">
+                <img class="img-fluid img-sidebar-google-play" src="<?php bloginfo('template_directory'); ?>/img/disponivel-google-play.png"
+                    alt="">
+            </a>
         </div>
+    </div>
 
     <div class="row justify-content-md-center">
         <div class="col">
@@ -50,15 +56,15 @@
     </div>
 
 
-   
+
 
     <div class="row">
         <div class="col">
             <p class="text-center"> <span>Diretor Executivo: </span><br>
-                <span class="font-weight-bold">Eduardo Rodrigues</span> <br>            
-                    Fones: <br>(11) 97218-2492 <br> 
-                    (11) 94956-6542 
-                </p>
+                <span class="font-weight-bold">Eduardo Rodrigues</span> <br>
+                Fones: <br>(11) 97218-2492 <br>
+                (11) 94956-6542
+            </p>
         </div>
     </div>
 </div>
