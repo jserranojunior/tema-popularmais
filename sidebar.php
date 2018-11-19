@@ -42,7 +42,7 @@
     </div>
     <div class="row">
         <div class="col text-center">
-            <a href="#">
+            <a href="https://play.google.com/store/apps/details?id=io.popularmais.starter">
                 <img class="img-fluid img-sidebar-google-play" src="<?php bloginfo('template_directory'); ?>/img/disponivel-google-play.png"
                     alt="">
             </a>
