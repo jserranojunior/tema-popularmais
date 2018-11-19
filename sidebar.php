@@ -12,9 +12,12 @@
             <div class="btn btn-sm btn-outline text-danger logo-menu">
                 <i class="fab fa-instagram"></i>
             </div>
+            <a href="https://twitter.com/popularmaisbr">
             <div class="btn btn-sm btn-outline text-primary logo-menu">
                 <i class="fab fa-twitter"></i>
             </div>
+            </a>
+            
             <a class="link-whatsapp" href="whatsapp://send?phone=55511972182492">
             <div class="btn btn-sm btn-outline text-success logo-menu">
                 <i class="fab fa-whatsapp"></i>
