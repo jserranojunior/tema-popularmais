@@ -23,7 +23,14 @@ $count = 0;
 
         <div class="row">
             <? 
-         
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 16,
+                'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
+                );
+
+            
+            query_posts($args);
             ?>
 
 
