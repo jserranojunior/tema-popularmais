@@ -6,3 +6,5 @@ function check_home() {
         die("no");
     }
 }
+
+add_theme_support( ‘post-thumbnails’ );
