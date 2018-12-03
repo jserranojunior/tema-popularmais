@@ -12,8 +12,9 @@ require trailingslashit(get_template_directory()) . '/library/kopa.php';
 
 /*
  * Initialize layout settings and dynamic sidebar settings
+ * require trailingslashit(get_template_directory()) . '/library/ini.php';
  */
-require trailingslashit(get_template_directory()) . '/library/ini.php';
+
 
 /*
  * Get google fonts array
