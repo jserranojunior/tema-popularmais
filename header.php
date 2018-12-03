@@ -17,6 +17,7 @@
 
     <title>Popular Mais</title>
 
+    <?php wp_head(); ?>
 </head>
 
 <body>
